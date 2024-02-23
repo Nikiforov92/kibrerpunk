@@ -1,0 +1,28 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.header-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    position: relative;
+    z-index: 4;
+}
+
+.header-content {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    height: 100%;
+}
+
+.banner {
+    padding: 70px;
+    width: 624px;
+    background-color: $accent-color;
+}
+

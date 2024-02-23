@@ -1,14 +1,9 @@
 html {
-    min-height: 100vh; /* sticky footer */
 	scroll-behavior: smooth;
 }
 
 body {
-	min-height: 100vh; /* sticky footer */
-	display: flex; /* sticky footer */
-	flex-direction: column; /* sticky footer */
-
-	font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: $black-color;
     font-size: 16px;
     line-height: 1.6875;
@@ -19,14 +14,6 @@ body {
 	-ms-text-size-adjust: 100%;
 	-moz-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%;
-}
-
-body > * {
-	flex-shrink: 0; /* sticky footer */
-}
-
-section {
-	// position: relative;
 }
 
 /* Grid styles */
@@ -65,19 +52,12 @@ section {
 
 /* Utility */
 
+.clip-path {
+    overflow: hidden;
+    clip-path: polygon(10% 0, 100% 0, 100% 83%, 90% 100%, 0 100%, 0 17%);
+}
+
 .none {
 	display: none !important;
 }
-
-.visually-hidden {
-    opacity: 0;
-    visibility: hidden;
-    width: 0px;
-    height: 0px;
-    display: block;
-    margin-left: -10000px;
-    background: transparent;
-    font-size: 0;
-}
-
 
