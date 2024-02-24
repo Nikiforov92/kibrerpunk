@@ -228,12 +228,6 @@ body {
   background-color: #F8F200;
   color: #000;
 }
-.button--accent-color:hover {
-  -webkit-transform: scale(1);
-          transform: scale(1);
-  -webkit-box-shadow: 0px 0px 10px 5px #52BEDC;
-          box-shadow: 0px 0px 10px 5px #52BEDC;
-}
 
 .contact-form {
   width: 460px;
@@ -248,7 +242,6 @@ body {
   display: block;
   padding-top: 18px;
   padding-bottom: 13px;
-  padding-left: 15px;
   padding-right: 15px;
   width: 100%;
   background-color: transparent;
@@ -257,15 +250,19 @@ body {
 }
 .form-input::-webkit-input-placeholder {
   color: #fff;
+  font-weight: 300;
 }
 .form-input:-ms-input-placeholder {
   color: #fff;
+  font-weight: 300;
 }
 .form-input::-ms-input-placeholder {
   color: #fff;
+  font-weight: 300;
 }
 .form-input::placeholder {
   color: #fff;
+  font-weight: 300;
 }
 .form-input:focus {
   border: 1px solid #fff;
@@ -276,33 +273,25 @@ body {
 
 .form-file {
   margin: 35px 0;
-  padding: 39px 0;
+  padding-top: 38px;
+  padding-bottom: 38px;
   display: block;
   width: 100%;
   border: 1px dashed #777777;
   text-align: center;
+  line-height: 1.16;
   -webkit-transition: border 0.3s ease-in;
   transition: border 0.3s ease-in;
 }
 .form-file span {
   color: #777777;
+  text-decoration: underline;
 }
 .form-file span:last-child {
-  font-size: 16px;
+  text-decoration: none;
+  font-size: 12px;
 }
-.form-file:focus {
-  border: 1px solid #fff;
-  border-radius: 5px;
-  -webkit-box-shadow: 0 0 10px #52BEDC;
-          box-shadow: 0 0 10px #52BEDC;
-}
-.form-file:active {
-  border: 1px solid #fff;
-  border-radius: 5px;
-  -webkit-box-shadow: 0 0 10px #52BEDC;
-          box-shadow: 0 0 10px #52BEDC;
-}
-.form-file:hover {
+.form-file:focus, .form-file:active, .form-file:hover {
   border: 1px solid #fff;
   border-radius: 5px;
   -webkit-box-shadow: 0 0 10px #52BEDC;
@@ -359,15 +348,15 @@ body {
   height: 11px;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%) scale(0);
-          transform: translate(-50%, -50%) scale(0);
+  -webkit-transform: translate(-50%, -50%) scale(1);
+          transform: translate(-50%, -50%) scale(1);
   background-image: url(../../img/icon/checkbox.svg);
   background-position: center;
   background-repeat: no-repeat;
 }
 .checkbox-wrapper .real-checkbox:checked + .custom-checkbox::before {
-  -webkit-transform: translate(-50%, -50%) scale(1);
-          transform: translate(-50%, -50%) scale(1);
+  -webkit-transform: translate(-50%, -50%) scale(0);
+          transform: translate(-50%, -50%) scale(0);
 }
 
 .header {
@@ -467,6 +456,7 @@ body {
 
 .promo {
   padding-bottom: 70px;
+  position: relative;
   background-color: #000;
 }
 
@@ -478,20 +468,80 @@ body {
           column-gap: 32px;
   margin-bottom: 25px;
 }
-
-.promo__icon {
+.promo__top .promo__icon {
   padding-top: 15px;
 }
-
-.promo__title {
+.promo__top .promo__title {
   padding-top: 70px;
 }
 
 .promo__desc {
-  margin-bottom: 25px;
+  margin-bottom: 102px;
   max-width: 963px;
   line-height: 1.88;
   color: #fff;
+}
+.promo__desc p + p {
+  margin-top: 10px;
+}
+
+.promo__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 196px;
+          column-gap: 196px;
+  padding-bottom: 70px;
+}
+
+.promo__img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 32px;
+          column-gap: 32px;
+}
+.promo__img .img-xbox {
+  position: relative;
+  height: 100%;
+}
+.promo__img .img-xbox img {
+  position: relative;
+  z-index: 4;
+}
+.promo__img .img-xbox::before {
+  content: '';
+  position: absolute;
+  bottom: -25px;
+  right: 0;
+  z-index: 0;
+  background-image: url(../../img/section-promo/bg-xbox.svg);
+  width: 460px;
+  height: 456px;
+}
+.promo__img .img-sony {
+  position: relative;
+  height: 100%;
+}
+.promo__img .img-sony img {
+  position: relative;
+  z-index: 4;
+}
+.promo__img .img-sony::before {
+  content: '';
+  position: absolute;
+  top: -15px;
+  right: 5px;
+  z-index: 0;
+  background-image: url(../../img/section-promo/bg-sony.svg);
+  width: 460px;
+  height: 456px;
+}
+
+.border-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
 /*# sourceMappingURL=main.css.map */

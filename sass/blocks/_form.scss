@@ -11,7 +11,6 @@
     display: block;
     padding-top: 18px;
     padding-bottom: 13px;
-    padding-left: 15px;
     padding-right: 15px;
     width: 100%;
     background-color: transparent;
@@ -20,6 +19,7 @@
 
     &::placeholder {
         color: $light-text-color;
+        font-weight: 300;
     }
 
     &:focus {
@@ -33,33 +33,27 @@
 
 .form-file {
     margin: 35px 0;
-    padding: 39px 0;
+    padding-top: 38px;
+    padding-bottom: 38px;
     display: block;
     width: 100%;
     border: 1px dashed $color-ish;
     text-align: center;
+    line-height: 1.16;
     transition: border 0.3s ease-in;
 
     span {
         color: $color-ish;
+        text-decoration: underline;
     }
 
     & span:last-child {
-        font-size: 16px;
+        text-decoration: none;
+        font-size: 12px;
     }
 
-    &:focus {
-        border: 1px solid $light-text-color;
-        border-radius: 5px;
-        box-shadow: 0 0 10px $bold-color;
-    }
-
-    &:active {
-        border: 1px solid $light-text-color;
-        border-radius: 5px;
-        box-shadow: 0 0 10px $bold-color;
-    }
-
+    &:focus, 
+    &:active,
     &:hover {
         border: 1px solid $light-text-color;
         border-radius: 5px;
@@ -115,25 +109,13 @@
         height: 11px;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -50%) scale(0);
+        transform: translate(-50%, -50%) scale(1);
         background-image: url(../../img/icon/checkbox.svg);
         background-position: center;
         background-repeat: no-repeat;
     }
     
     .real-checkbox:checked + .custom-checkbox::before {
-        transform: translate(-50%, -50%) scale(1);
+        transform: translate(-50%, -50%) scale(0);
       }
 }
-
-
-
-
-
-
-
-
-
-
-
-
