@@ -5,7 +5,7 @@ html {
 body {
     font-family: 'Roboto', sans-serif;
     color: $black-color;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.6875;
 
     text-rendering: optimizeSpeed;
@@ -19,7 +19,7 @@ body {
 /* Grid styles */
 
 .container {
-	max-width: 1140px;
+	max-width: 1310px;
     width: 100%;
 	margin-left: auto;
     margin-right: auto;
@@ -55,6 +55,11 @@ body {
 .clip-path {
     overflow: hidden;
     clip-path: polygon(10% 0, 100% 0, 100% 83%, 90% 100%, 0 100%, 0 17%);
+}
+
+.bold {
+    color: $bold-color;
+    font-weight: 700;
 }
 
 .none {

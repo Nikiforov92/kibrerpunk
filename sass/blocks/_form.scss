@@ -1,0 +1,30 @@
+.contact-form {
+    width: 460px;
+}
+
+.form-item + .form-item {
+    margin-top: 18px;
+}
+
+.form-input {
+    display: block;
+    padding-top: 18px;
+    padding-bottom: 13px;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%;
+    background-color: transparent;
+    border-bottom: 1px solid #777;
+    color: $light-text-color;
+
+    &::placeholder {
+        color: $light-text-color;
+    }
+
+    &:focus {
+        border: 1px solid $light-text-color;
+        border-radius: 5px;
+        box-shadow: 0 0 10px $bold-color;
+    }
+}
+

@@ -50,35 +50,131 @@
     />
     <meta name="theme-color" content="#ffffff" />
 
-	<!-- Styles -->
+    <!-- Styles -->
     <link rel="stylesheet" href="./fonts/fonts.css" />
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
     <header class="header container">
-		<div class="slider">
-			<img src="./img/header/01.jpg" alt="Киберпанк">
-		</div>
-		<div class="header-top">
-				<div class="logo">
-					<img src="./img/logo.svg" alt="Киберпанк-логотип">
+      <div class="slider">
+        <img src="./img/header/01.jpg" alt="Киберпанк" />
+      </div>
+      <div class="header-top">
+        <div class="logo">
+          <img src="./img/logo.svg" alt="Киберпанк-логотип" />
+        </div>
+        <div class="icon-row">
+          <a href="#!"
+            ><img src="./img/icon/social-icon/youtube.svg" alt="ютуб"
+          /></a>
+          <a href="#!"
+            ><img src="./img/icon/social-icon/vk.svg" alt="вконтакте"
+          /></a>
+          <a href="#!"
+            ><img src="./img/icon/social-icon/fb.svg" alt="фейсбук"
+          /></a>
+          <a href="#!"
+            ><img src="./img/icon/social-icon/twitter.svg" alt="твиттер"
+          /></a>
+          <a href="#!"
+            ><img src="./img/icon/social-icon/twitch.svg" alt="твитч"
+          /></a>
+          <a href="#!"
+            ><img src="./img/icon/social-icon/instagram.svg" alt="инстаграм"
+          /></a>
+        </div>
+      </div>
+      <div class="header-content">
+        <div class="banner clip-path">
+          <h2 class="h2">Доступно на всех платформах</h2>
+          <a href="#about__title" class="button button--big">Узнать больше</a>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="about">
+        <div class="container">
+          <div class="about__title" id="about__title">
+            <h2 class="h2">Найт-Сити изменит тебя навсегда!</h2>
+          </div>
+          <div class="about__desc">
+            <p>
+              <span class="bold">Cyberpunk 2077</span> — приключенческая ролевая
+              игра, действие которой происходит в мегаполисе Найт-Сити, где
+              власть, роскошь и модификации тела ценятся выше всего. Ты играешь
+              за V, наёмника в поисках устройства, позволяющего обрести
+              бессмертие. Ты сможешь менять киберимпланты, навыки и стиль игры
+              своего персонажа, исследуя открытый мир, где твои поступки влияют
+              на ход сюжета и всё, что тебя окружает.
+            </p>
+          </div>
+          <div class="about__img">
+            <div class="about__col-wrapper">
+              <img
+                src="./img/section-about/col-small-1.jpg"
+                alt="Найт-Сити"
+                class="clip-path"
+              />
+              <img
+                src="./img/section-about/col-small-2.jpg"
+                alt="Найт-Сити"
+                class="clip-path"
+              />
+            </div>
+            <div class="about__col-wrapper">
+              <img
+                src="./img/section-about/big-img.jpg"
+                alt="Найт-Сити"
+                class="clip-path big-img"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="promo">
+        <div class="border-top">
+          <img src="./img/section-promo/border-top.jpg" alt="border" />
+        </div>
+        <div class="container">
+          <div class="promo__top">
+            <div class="promo__icon">
+              <img src="./img/section-promo/icon-promo.svg" alt="promo" />
+            </div>
+            <div class="promo__title">
+              <h2 class="h2">Играй и выигрывай!</h2>
+            </div>
+          </div>
+          <div class="promo__desc">
+            <p>
+              Играй в <span class="bold">Cyberpunk 2077</span> и получи
+              возможность выиграть консоль
+              <span class="bold">Xbox Series X</span> или
+              <span class="bold">Sony PlayStation 5!</span> Заполни форму ниже и
+              приложи скриншот о покупке игры. Итоги розыгрыша будут подведены 1
+              февраля. Удачи! ;)
+            </p>
+          </div>
+          <div class="promo__wrapper">
+            <form action="" class="contact-form">
+				<!-- input имя -->
+				<div class="form-item">
+					<input type="text" name="name" class="form-input" placeholder="Как тебя зовут?">
 				</div>
-				<div class="icon-row">
-					<a href="#!"><img src="./img/icon/social-icon/youtube.svg" alt="ютуб"></a>
-					<a href="#!"><img src="./img/icon/social-icon/vk.svg" alt="вконтакте"></a>
-					<a href="#!"><img src="./img/icon/social-icon/fb.svg" alt="фейсбук"></a>
-					<a href="#!"><img src="./img/icon/social-icon/twitter.svg" alt="твиттер"></a>
-					<a href="#!"><img src="./img/icon/social-icon/twitch.svg" alt="твитч"></a>
-					<a href="#!"><img src="./img/icon/social-icon/instagram.svg" alt="инстаграм"></a>
+				<!-- input email -->
+				<div class="form-item">
+					<input type="email" name="email" class="form-input" placeholder="Твой е-mail" autocomplete>
 				</div>
-		</div>
-		<div class="header-content">
-			<div class="banner clip-path">
-				<h2 class="h2">Доступно на всех платформах</h2>
-				<a href="#!" class="button button--big">Узнать больше</a>
-			</div>
-		</div>
-	</header>
-	<footer class="footer"></footer>
+				<!-- label -->
+				<label class="form-label">
+					<input type="file" class="form-label__file">
+				</label>
+			</form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer"></footer>
+
+    <script src="./js/main.js"></script>
   </body>
 </html>

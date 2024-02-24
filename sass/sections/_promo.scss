@@ -1,0 +1,26 @@
+.promo {
+    padding-bottom: 70px;
+    background-color: $black-color;
+}
+
+.promo__top {
+    display: flex;
+    column-gap: 32px;
+    margin-bottom: 25px;
+}
+
+.promo__icon {
+    padding-top: 15px;
+}
+
+.promo__title {
+    padding-top: 70px;
+}
+
+.promo__desc {
+    margin-bottom: 25px;
+    max-width: 963px;
+    line-height: 1.88;
+    color: $light-text-color;
+}
+
