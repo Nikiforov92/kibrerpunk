@@ -1,5 +1,6 @@
 .contact-form {
     width: 460px;
+    color: $light-text-color;
 }
 
 .form-item + .form-item {
@@ -14,7 +15,7 @@
     padding-right: 15px;
     width: 100%;
     background-color: transparent;
-    border-bottom: 1px solid #777;
+    border-bottom: 1px solid $color-ish;
     color: $light-text-color;
 
     &::placeholder {
@@ -27,4 +28,112 @@
         box-shadow: 0 0 10px $bold-color;
     }
 }
+
+// input type="file"
+
+.form-file {
+    margin: 35px 0;
+    padding: 39px 0;
+    display: block;
+    width: 100%;
+    border: 1px dashed $color-ish;
+    text-align: center;
+    transition: border 0.3s ease-in;
+
+    span {
+        color: $color-ish;
+    }
+
+    & span:last-child {
+        font-size: 16px;
+    }
+
+    &:focus {
+        border: 1px solid $light-text-color;
+        border-radius: 5px;
+        box-shadow: 0 0 10px $bold-color;
+    }
+
+    &:active {
+        border: 1px solid $light-text-color;
+        border-radius: 5px;
+        box-shadow: 0 0 10px $bold-color;
+    }
+
+    &:hover {
+        border: 1px solid $light-text-color;
+        border-radius: 5px;
+        box-shadow: 0 0 10px $bold-color;
+    }
+}
+
+// button
+
+.form-button {
+    margin-bottom: 15px;
+}
+
+// checkbox
+
+.checkbox-wrapper {
+    display: flex;
+    align-items: flex-start;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 300;
+    color: $light-text-color;
+
+    span {
+        padding-top: 4px;
+        vertical-align: bottom;
+    }
+
+    .real-checkbox {
+        width: 0;
+        padding: 0;
+        position: absolute;
+        opacity: 0;
+        z-index: -1;
+        appearance: none;
+    }
+
+    .custom-checkbox {
+        flex-shrink: 0;
+        margin-right: 10px;
+        position: relative;
+        display: inline-block;
+        width: 14px;
+        height: 14px;
+        border: 1px solid $color-ish;
+    }
+
+    .custom-checkbox::before {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 11px;
+        height: 11px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(0);
+        background-image: url(../../img/icon/checkbox.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    
+    .real-checkbox:checked + .custom-checkbox::before {
+        transform: translate(-50%, -50%) scale(1);
+      }
+}
+
+
+
+
+
+
+
+
+
+
+
 
