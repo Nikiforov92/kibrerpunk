@@ -686,13 +686,13 @@ body {
   background-repeat: no-repeat;
 }
 .ofer__item.disk::before {
-  background-image: url(../../img/section-ofer/icon/disk.svg);
+  background-image: url(.././img/section-ofer/icon/disk.svg);
 }
 .ofer__item.fall::before {
-  background-image: url(../../img/section-ofer/icon/fall.svg);
+  background-image: url(.././img/section-ofer/icon/fall.svg);
 }
 .ofer__item.directory::before {
-  background-image: url(../../img/section-ofer/icon/directory.svg);
+  background-image: url(.././img/section-ofer/icon/directory.svg);
 }
 .ofer__item + .ofer__item {
   margin-top: 21px;

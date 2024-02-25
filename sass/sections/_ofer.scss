@@ -51,15 +51,15 @@
     }
 
     &.disk::before {
-        background-image: url(../../img/section-ofer/icon/disk.svg);
+        background-image: url(.././img/section-ofer/icon/disk.svg);
     }
 
     &.fall::before {
-        background-image: url(../../img/section-ofer/icon/fall.svg);
+        background-image: url(.././img/section-ofer/icon/fall.svg);
     }
 
     &.directory::before {
-        background-image: url(../../img/section-ofer/icon/directory.svg);
+        background-image: url(.././img/section-ofer/icon/directory.svg);
     }
 
     &+& {
