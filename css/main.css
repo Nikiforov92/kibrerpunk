@@ -198,6 +198,17 @@ body {
   color: #fff;
 }
 
+.ofer .h2 {
+  color: #fff;
+}
+
+.subtitle {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.16;
+  color: #52BEDC;
+}
+
 .button {
   display: inline-block;
   padding: 15px 50px;
@@ -600,7 +611,7 @@ body {
 .partner__list .partner__item::before {
   content: '';
   position: absolute;
-  top: 0;
+  top: -3px;
   left: 0;
   width: 24px;
   height: 24px;
@@ -616,6 +627,97 @@ body {
 }
 .partner__list .partner__item.motion::before {
   background-image: url(.././img/section-partner/icon/motion.svg);
+}
+
+.ofer {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  background-color: #000;
+  color: #fff;
+}
+
+.ofer__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 50%;
+  max-width: 944px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.ofer__content {
+  width: 50%;
+  padding-left: 32px;
+}
+
+.ofer__title {
+  margin-bottom: 25px;
+}
+
+.ofer__desc {
+  margin-bottom: 70px;
+}
+.ofer__desc .subtitle {
+  margin-bottom: 15px;
+}
+
+.ofer__item {
+  padding-left: 42px;
+  position: relative;
+}
+.ofer__item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 32px;
+  height: 32px;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.ofer__item.disk::before {
+  background-image: url(../../img/section-ofer/icon/disk.svg);
+}
+.ofer__item.fall::before {
+  background-image: url(../../img/section-ofer/icon/fall.svg);
+}
+.ofer__item.directory::before {
+  background-image: url(../../img/section-ofer/icon/directory.svg);
+}
+.ofer__item + .ofer__item {
+  margin-top: 21px;
+}
+
+.ofer__platform .subtitle {
+  margin-bottom: 25px;
+}
+
+.ofer__platform-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 320px;
+  row-gap: 50px;
+}
+
+.platform-link img {
+  -webkit-transition: opacity 0.3s ease-in;
+  transition: opacity 0.3s ease-in;
+}
+.platform-link:hover img {
+  opacity: 0.5;
 }
 
 /*# sourceMappingURL=main.css.map */
