@@ -1,0 +1,33 @@
+.footer {
+    color: $color-ish;
+    text-align: center;
+}
+
+.footer__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 13px 0;
+}
+
+.row-logo, .footer__liks {
+    display: flex;
+    column-gap: 32px;
+}
+
+.footer__liks {
+    a {
+        color: $black-color;
+        transition: color 0.3s ease-in;
+    }
+
+    a:hover {
+        color: $bold-color;
+    }
+}
+
+.footer__copyright {
+    padding: 13px 0;
+    background-color: $black-color;
+    font-size: 12px;
+}

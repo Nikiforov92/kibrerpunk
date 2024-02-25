@@ -720,4 +720,45 @@ body {
   opacity: 0.5;
 }
 
+.footer {
+  color: #777777;
+  text-align: center;
+}
+
+.footer__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 13px 0;
+}
+
+.row-logo, .footer__liks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 32px;
+          column-gap: 32px;
+}
+
+.footer__liks a {
+  color: #000;
+  -webkit-transition: color 0.3s ease-in;
+  transition: color 0.3s ease-in;
+}
+.footer__liks a:hover {
+  color: #52BEDC;
+}
+
+.footer__copyright {
+  padding: 13px 0;
+  background-color: #000;
+  font-size: 12px;
+}
+
 /*# sourceMappingURL=main.css.map */
