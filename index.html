@@ -8,8 +8,8 @@
 
     <!-- Title and SEO -->
     <title>KyberPunk</title>
-    <meta name="description" content="Описание страницы" />
-    <meta name="keywords" content="ключевые слова, фразы" />
+    <meta name="description" content="Погрузись в Найт-Сити" />
+    <meta name="keywords" content="Киберпанк Найт-Сити Акция" />
 
     <!-- Open Graph -->
     <!-- <meta property="og:url" content="https://webcademy.ru/"> -->
@@ -51,13 +51,20 @@
     <meta name="theme-color" content="#ffffff" />
 
     <!-- Styles -->
+    <link rel="stylesheet" href="./libs/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./fonts/fonts.css" />
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
     <header class="header container">
-      <div class="slider">
-        <img src="./img/header/01.jpg" alt="Киберпанк" />
+      <!-- Swiper -->
+      <div class="swiper slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="./img/header/01.jpg" alt="Киберпанк"></div>
+          <div class="swiper-slide"><img src="./img/header/02.jpg" alt="Киберпанк"></div>
+          <div class="swiper-slide"><img src="./img/header/03.jpg" alt="Киберпанк"></div>
+        </div>
+        <!-- <div class="swiper-pagination"></div> -->
       </div>
       <div class="header-top">
         <div class="logo">
@@ -261,7 +268,11 @@
         </div>
       </section>
       <section class="ofer">
-        <img src="./img/section-ofer/ofer.jpg" alt="Предложение купить игру" class="ofer__img"/>
+        <img
+          src="./img/section-ofer/ofer.jpg"
+          alt="Предложение купить игру"
+          class="ofer__img"
+        />
         <div class="ofer__content">
           <div class="container">
             <div class="ofer__title" id="ofer__title">
@@ -271,17 +282,29 @@
               <h3 class="subtitle">В комплект входит:</h3>
               <ul class="ofer__list">
                 <li class="ofer__item disk">Футляр с игровыми дисками</li>
-                <li class="ofer__item fall">Футляр с кодом для загрузки игры и дисками (pc)</li>
-                <li class="ofer__item directory">Справочник с информацией об игровом мире</li>
+                <li class="ofer__item fall">
+                  Футляр с кодом для загрузки игры и дисками (pc)
+                </li>
+                <li class="ofer__item directory">
+                  Справочник с информацией об игровом мире
+                </li>
               </ul>
             </div>
             <div class="ofer__platform">
               <h3 class="subtitle">Выберите платформу:</h3>
               <div class="ofer__platform-wrapper">
-                <a href="#!" class="platform-link"><img src="./img/section-ofer/PC.svg" alt="ПК"></a>
-                <a href="#!" class="platform-link"><img src="./img/section-ofer/xbox.svg" alt=""></a>
-                <a href="#!" class="platform-link"><img src="./img/section-ofer/stadia.svg" alt=""></a>
-                <a href="#!" class="platform-link"><img src="./img/section-ofer/ps4.svg" alt=""></a>
+                <a href="#!" class="platform-link"
+                  ><img src="./img/section-ofer/PC.svg" alt="ПК"
+                /></a>
+                <a href="#!" class="platform-link"
+                  ><img src="./img/section-ofer/xbox.svg" alt=""
+                /></a>
+                <a href="#!" class="platform-link"
+                  ><img src="./img/section-ofer/stadia.svg" alt=""
+                /></a>
+                <a href="#!" class="platform-link"
+                  ><img src="./img/section-ofer/ps4.svg" alt=""
+                /></a>
               </div>
             </div>
           </div>
@@ -293,10 +316,10 @@
         <div class="footer__top">
           <div class="row-logo">
             <a href="#!">
-              <img src="./img/logo.svg" alt="kyberpunk">
+              <img src="./img/logo.svg" alt="kyberpunk" />
             </a>
             <a href="#!">
-              <img src="./img/footer/cd-projekt.svg" alt="cd-projekt">
+              <img src="./img/footer/cd-projekt.svg" alt="cd-projekt" />
             </a>
           </div>
           <div class="footer__liks">
@@ -309,6 +332,8 @@
         <p>CD PROJEKT&copy;, Cyberpunk&copy;, Cyberpunk 2077&copy;</p>
       </div>
     </footer>
+    <!-- Swiper -->
+    <script src="./libs/swiper/swiper-bundle.min.js"></script>
     <!-- My script -->
     <script src="./js/main.js"></script>
   </body>
