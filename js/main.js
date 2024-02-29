@@ -32,7 +32,7 @@ let im = new Inputmask('+7 (999) 999-99-99');
 im.mask(selector);
 
 // валидация форм
-let validateforms = function(selector, rules, successModal, yaGoal) {
+let validateforms = function(selector, rules) {
   new window.JustValidate(selector, {
     rules: rules,
     submitHandler: function(form) {
@@ -59,6 +59,7 @@ validateforms('.contact-form', {
   email: {required: true, email: true}, 
   tel: {required: true}, 
   name:{required: true, minLength: 2, maxLength: 15},
-  checkbox: {required: true}
+  checkbox: {required: true},
+  file: {required: true}
 })
 
