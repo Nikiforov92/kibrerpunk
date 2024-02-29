@@ -3,8 +3,9 @@
     color: $light-text-color;
 }
 
-.form-item + .form-item {
-    margin-top: 18px;
+.form-item {
+    position: relative;
+    margin-bottom: 20px;
 }
 
 .form-input {
@@ -12,6 +13,7 @@
     padding-top: 18px;
     padding-bottom: 13px;
     padding-right: 15px;
+    padding-left: 10px;
     width: 100%;
     background-color: transparent;
     border-bottom: 1px solid $color-ish;
@@ -32,7 +34,8 @@
 // input type="file"
 
 .form-file {
-    margin: 35px 0;
+    margin-top: 20px;
+    margin-bottom: 35px;
     padding-top: 38px;
     padding-bottom: 38px;
     display: block;
@@ -109,13 +112,13 @@
         height: 11px;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -50%) scale(1);
+        transform: translate(-50%, -50%) scale(0);
         background-image: url(.././img/icon/checkbox.svg);
         background-position: center;
         background-repeat: no-repeat;
     }
     
     .real-checkbox:checked + .custom-checkbox::before {
-        transform: translate(-50%, -50%) scale(0);
+        transform: translate(-50%, -50%) scale(1);
       }
 }

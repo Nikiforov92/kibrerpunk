@@ -213,6 +213,7 @@ body {
 .button {
   display: inline-block;
   padding: 15px 50px;
+  position: relative;
   background-color: #000;
   font-size: 18px;
   line-height: 1.16;
@@ -234,8 +235,47 @@ body {
   padding: 19px 50px;
   font-size: 24px;
   line-height: 1.66;
+  overflow: hidden;
+}
+.button--big:hover::before {
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 150px;
+  background: -webkit-gradient(linear, left top, right top, color-stop(20%, rgba(82, 190, 220, 0.4)), to(rgba(255, 255, 255, 0.1)));
+  background: linear-gradient(90deg, rgba(82, 190, 220, 0.4) 20%, rgba(255, 255, 255, 0.1) 100%);
+  left: -20%;
+  top: -40px;
+  -webkit-transform: rotate(30deg);
+          transform: rotate(30deg);
+  -webkit-animation-name: runShadow;
+          animation-name: runShadow;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
 }
 
+@-webkit-keyframes runShadow {
+  from {
+    left: 0;
+  }
+  to {
+    left: 105%;
+  }
+}
+
+@keyframes runShadow {
+  from {
+    left: 0;
+  }
+  to {
+    left: 105%;
+  }
+}
 .button--accent-color {
   background-color: #F8F200;
   color: #000;
@@ -246,8 +286,9 @@ body {
   color: #fff;
 }
 
-.form-item + .form-item {
-  margin-top: 18px;
+.form-item {
+  position: relative;
+  margin-bottom: 20px;
 }
 
 .form-input {
@@ -255,6 +296,7 @@ body {
   padding-top: 18px;
   padding-bottom: 13px;
   padding-right: 15px;
+  padding-left: 10px;
   width: 100%;
   background-color: transparent;
   border-bottom: 1px solid #777777;
@@ -284,7 +326,8 @@ body {
 }
 
 .form-file {
-  margin: 35px 0;
+  margin-top: 20px;
+  margin-bottom: 35px;
   padding-top: 38px;
   padding-bottom: 38px;
   display: block;
@@ -360,15 +403,15 @@ body {
   height: 11px;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%) scale(1);
-          transform: translate(-50%, -50%) scale(1);
+  -webkit-transform: translate(-50%, -50%) scale(0);
+          transform: translate(-50%, -50%) scale(0);
   background-image: url(.././img/icon/checkbox.svg);
   background-position: center;
   background-repeat: no-repeat;
 }
 .checkbox-wrapper .real-checkbox:checked + .custom-checkbox::before {
-  -webkit-transform: translate(-50%, -50%) scale(0);
-          transform: translate(-50%, -50%) scale(0);
+  -webkit-transform: translate(-50%, -50%) scale(1);
+          transform: translate(-50%, -50%) scale(1);
 }
 
 .header {

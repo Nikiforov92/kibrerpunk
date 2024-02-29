@@ -60,9 +60,15 @@
       <!-- Swiper -->
       <div class="swiper slider">
         <div class="swiper-wrapper">
-          <div class="swiper-slide"><img src="./img/header/01.jpg" alt="Киберпанк"></div>
-          <div class="swiper-slide"><img src="./img/header/02.jpg" alt="Киберпанк"></div>
-          <div class="swiper-slide"><img src="./img/header/03.jpg" alt="Киберпанк"></div>
+          <div class="swiper-slide">
+            <img src="./img/header/01.jpg" alt="Киберпанк" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/header/02.jpg" alt="Киберпанк" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/header/03.jpg" alt="Киберпанк" />
+          </div>
         </div>
         <!-- <div class="swiper-pagination"></div> -->
       </div>
@@ -162,15 +168,37 @@
             </p>
           </div>
           <div class="promo__wrapper">
-            <form action="" class="contact-form">
+            <form
+              action="mail.php"
+              enctype="multipart/form-data"
+              class="contact-form"
+              method="post"
+            >
+              <input
+                type="hidden"
+                name="admin_email[]"
+                value="nsv-92@mail.ru"
+              />
               <!-- input имя -->
               <div class="form-item">
                 <input
                   type="text"
                   name="name"
+                  data-validate-field="name"
                   class="form-input"
                   placeholder="Как тебя зовут?"
-                  required
+                  
+                />
+              </div>
+              <!-- input phone -->
+              <div class="form-item">
+                <input
+                  type="tel"
+                  name="tel"
+                  data-validate-field="tel"
+                  class="form-input"
+                  placeholder="Твой телефон"
+                  
                 />
               </div>
               <!-- input email -->
@@ -178,9 +206,10 @@
                 <input
                   type="email"
                   name="email"
+                  data-validate-field="email"
                   class="form-input"
                   placeholder="Твой е-mail"
-                  required
+                  
                 />
               </div>
               <!-- input file -->
@@ -189,7 +218,7 @@
                   type="file"
                   class="form-input--file"
                   name="file"
-                  required
+                  
                 />
                 <span>Прикрепить скриншот</span><br />
                 <span>.png / .jpg / .pdf</span>
@@ -204,7 +233,7 @@
               </div>
               <!-- checkbox -->
               <label class="checkbox-wrapper">
-                <input type="checkbox" class="real-checkbox" />
+                <input type="checkbox" class="real-checkbox"  data-validate-field="checkbox"/>
                 <span class="custom-checkbox"></span>
                 <span>Согласен на обработку персональных данных</span>
               </label>
@@ -332,7 +361,11 @@
         <p>CD PROJEKT&copy;, Cyberpunk&copy;, Cyberpunk 2077&copy;</p>
       </div>
     </footer>
-    <!-- Swiper -->
+    <!-- Плагин для валидации форм -->
+    <script src="./libs/just-validate/just-vakidate.min.js"></script>
+    <!-- Маска для телефона inputmask -->
+    <script src="./libs/inputmask/inputmask.min.js"></script>
+    <!-- Слайдер Swiper -->
     <script src="./libs/swiper/swiper-bundle.min.js"></script>
     <!-- My script -->
     <script src="./js/main.js"></script>

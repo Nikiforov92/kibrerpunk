@@ -1,6 +1,7 @@
 .button {
     display: inline-block;
     padding: 15px 50px;
+    position: relative;
     background-color: $black-color;
     font-size: 18px;
     line-height: 1.16;
@@ -20,7 +21,32 @@
     padding: 19px 50px;
     font-size: 24px;
     line-height: 1.66;
+    overflow: hidden;
+
+    &:hover::before {
+        content: '';
+        position: absolute;
+        width: 30px;
+        height: 150px;
+        background: linear-gradient(90deg, rgba(82, 190, 220, 0.4) 20%, rgba(255, 255, 255, 0.1) 100%);
+        left: -20%;
+        top: -40px;
+        transform: rotate(30deg);
+        animation-name: runShadow;
+        animation-duration: 1s;
+        animation-iteration-count: 1;
+        animation-iteration-count: 1;
+        animation-timing-function: linear;
+
+    }
 }
+
+
+@keyframes runShadow {
+    from{left: 0;}
+    to{left: 105%;}
+}
+
 
 .button--accent-color {
     background-color: $accent-color;
